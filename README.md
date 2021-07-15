@@ -1,16 +1,13 @@
-# provider_example
+# Provider Example App
 
-A new Flutter project.
+A new Flutter project just to learn about provider.
 
-## Getting Started
+## All about provider
 
-This project is a starting point for a Flutter application.
+<p>Provider basically extracts the data in main.dart file itself and uses it wherever required in the app. This effectively manages the state of the app as there is lesser loading, and more efficiency.</p>
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- <b>Change Notifier</b> : It listens to a ChangeNotifier extended by the model classes and rebuilds depends whenever notifyListeners is called.
+- <b>Consumer<T></b> : It obtains the provider from its ancestors and passes the value obtained to the builder. Mostly wrapped around particular widget than the whole page.
+- <b>FutureProvider<T></b> : This class takes a Future in its create function.
+- <b>StreamProvider<T></b> : This class takes a Stream in its create function.
+- <b>Multiprovider</b> : A list of all provider used in project.  
